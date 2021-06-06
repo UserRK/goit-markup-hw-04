@@ -530,6 +530,45 @@ body {
   margin-top: 10px;
 }
 
+.social-links-ul {
+  display: flex;
+}
+
+.social-links-li {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-top: 16px;
+}
+
+.social-links-link {
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+}
+
+.social-links-li:hover,
+.social-links-li:focus {
+  background-color: var(--blue);
+}
+
+.social-icons:hover,
+.social-icons:focus {
+  fill: currentColor;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  fill: var(--links);
+  width: 46%;
+  height: 46%;
+  margin: 12px;
+}
+
 /* our clients */
 
 .regular-customers-title {
@@ -543,8 +582,6 @@ body {
 .regular-customers {
   display: flex;
   justify-content: center;
-}
-.regular-customers-li {
 }
 
 .regular-customers-li:not(first-child) {
