@@ -250,7 +250,9 @@ body {
 .img-pro {
   display: block;
 }
+
 /* footer */
+
 .footer-section {
   background-color: var(--dark-background);
   padding-top: 60px;
@@ -308,26 +310,36 @@ body {
 
 .social-links-footer {
   margin-left: 70px;
-  display: flex;
-  flex-direction: column;
 }
 
 .social-links-footer-ul {
   display: flex;
 }
+
+.social-links-footer-ul .social-links-footer-li:not(last-child) {
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
 .social-links-footer-li {
   display: flex;
   align-items: center;
+  justify-content: baseline;
   background-color: var(--socialbg);
   width: 44px;
   height: 44px;
   border-radius: 50%;
 }
 
+.social-links-footer-li:hover,
+.social-links-footer-li:focus {
+  background-color: var(--blue);
+}
+
 .social-icons-footer {
   display: flex;
   justify-content: center;
-  fill: currentColor;
+  fill: var(--white);
   width: 46%;
   height: 46%;
   margin: 12px;
@@ -342,6 +354,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 /* business solutions (index.html) */
 
 .business {
